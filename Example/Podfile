@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ICEnvironmentSetting_Example' do
+  pod 'ICEnvironmentSetting', :path => '../'
+
+  target 'ICEnvironmentSetting_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
