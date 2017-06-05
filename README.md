@@ -9,7 +9,12 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Minimum Requirements
+
+iOS8+
+Swift 3.0
+XCode 8.0
+
 
 ## Installation
 
@@ -19,6 +24,48 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "ICEnvironmentSetting"
 ```
+
+## Usage
+
+### Setup Environment on AppDelegate
+```swift
+	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [	UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    
+        
+		// Default development
+ 		ICEnvironmentSetting.setup(window: self.window!) 
+ 		// you can set default environment
+	 	ICEnvironmentSetting.setup(window: self.window!,defaultEnv: .STAGGING)
+
+	 	//Setup your URL API environment
+	 	ICEnvironmentSetting.setupBaseURL(development: "DEV", staging: "STG", production: "PROD")
+        return true
+    }
+
+```
+### Setup Listener
+Add delegate on home your app
+
+```swift
+	ICEnvironmentSettingDelegate
+	func reloadEnvironment(environment: ENVIRONMENT) {
+        //Reload data when environment change
+    }
+```
+
+Add touch to switch environment with three fingers
+
+```swift
+	ICEnvironmentSetting.setupTouch(self.view)
+```
+
+You can use string extension with modify environment 
+
+```swift
+	let homeURL = "/home"
+	request(homeURL.ENV) //see example more info
+```
+
 
 ## Author
 
