@@ -1,0 +1,16 @@
+PODS:
+  - ICEnvironmentSetting (0.1.0)
+
+DEPENDENCIES:
+  - ICEnvironmentSetting (from `../`)
+
+EXTERNAL SOURCES:
+  ICEnvironmentSetting:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ICEnvironmentSetting: 4ea2c1a6b218a35d0dcd3474febc34b0e5f4870c
+
+PODFILE CHECKSUM: 39549d7d6c5a8d42a184ad2390e074f6dbf277c3
+
+COCOAPODS: 1.2.1

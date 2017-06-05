@@ -1,0 +1,6 @@
+framework module Pods_ICEnvironmentSetting_Example {
+  umbrella header "Pods-ICEnvironmentSetting_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

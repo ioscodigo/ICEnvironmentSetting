@@ -1,0 +1,6 @@
+framework module ICEnvironmentSetting {
+  umbrella header "ICEnvironmentSetting-umbrella.h"
+
+  export *
+  module * { export * }
+}
